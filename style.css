@@ -1,0 +1,533 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+main{
+    background-color: #fffdfd;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 0.1px;
+}
+
+#nav{
+    height: 10vh;
+    width: 100%;
+    margin-top: 3vh;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#nav h3{
+    margin-left: 6vh;
+}
+#nav h4{
+    visibility: hidden;
+}
+#nav h1{
+    transform: translateX(-6vw);
+    font-family: poppins;
+    font-weight: 900;
+    letter-spacing: -2px;
+}
+#nav h2{
+    border-right: 2px solid black;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    font-weight: 300;
+}
+#nav h1 .niche{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 3vh;
+    margin-top: -1.8vh;
+    font-size: small;
+    color: rgb(153, 146, 146);
+    letter-spacing: .1px;
+    font-weight: 500;
+}
+.center{
+        height: 80%;
+        width: 100%;
+        padding: 4vw;
+    }
+    .video{
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+    .video video{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    .vidcont{
+        bottom: 0;
+        height:60% ;
+        width: 100%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .circle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 5vh;
+        width: 5vh;
+        border-radius: 50%;
+        border: 2px solid grey;
+    }
+    .vidcont h1{
+        margin-left: 2vw;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        letter-spacing: .5px;
+        font-weight:bolder;
+        color: white;
+    }
+    .circle{
+        margin-right: 2vw;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        letter-spacing: .5px;
+        font-weight:bolder;
+        color: white;
+    }
+    .line{
+        width: 100%;
+        position: absolute;
+        height: .5px;
+        bottom: 18%;
+    }
+    .vidcont1{
+        bottom: 5%;
+        height:10% ;
+        width: 100%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .vidcont1 h3{
+        margin-left: 2vh;
+        color: white;
+    }
+    .arrow{
+        margin-right: 2vh;
+        color: white;
+    }
+    .models{
+        height: 23vh;
+        display: flex;
+        gap: 2vh;
+        align-items: center;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        white-space: nowrap;
+        
+    }
+    .model{
+        height: 20vh;
+        position: relative;
+        width: 20vh;
+        margin-left: 2vh;
+        border-radius: 50%;
+        overflow: hidden;
+        flex: 0 0 auto;
+        
+    }
+    .model img{
+        height: 100%;
+        width: 100%;
+
+        object-fit: cover;
+    }
+    .scroll{
+        display: flex;
+        animation: anime 24s linear 0.1s infinite;
+    }
+    @keyframes anime {
+    0%{
+        transform: translateX(10%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+    }
+     .letter{
+        height: 10vh;
+        width: 100%;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        margin-top: 3vh;
+        
+    }
+    .lettertog{
+    display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 3vw;
+}
+    .div1{
+        font-weight: 800;
+        border-bottom: 2px solid black;
+        margin-left: 5vw;
+        font-style: italic;
+        font-size:xx-large;
+    }
+    .div2{
+        display: flex;
+        gap: .7vh;
+        font-size: small;
+         font-style: italic;
+        margin-right: 2vh;
+        
+    }
+    .div2 h1{
+        padding: .9vh 1.7vh;
+        border-radius: 50%;
+        border: 2px solid white;
+        cursor: pointer;
+        transition: ease-in-out ;
+    }
+    .div2 h1:hover{
+        border: 2px solid black;
+    }
+    .img1{
+        height: 80vh;
+        width: 100%;
+        padding: 4vh;
+        display: flex;
+        gap: 2vh;
+    }
+    .img1a{
+        height: 100%;
+        width: 50%;
+    }
+    .img1a img{
+        height: 90%;
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+    .img1a h2{
+        display: flex;
+        align-items: center;
+    }
+    .img1b{
+        height: 100%;
+        width: 50%;
+    }
+    .img1b img{
+        height: 80%;
+        width: 100%;
+        object-fit: cover;
+        object-position:30% 10%;
+    }
+    .cont{
+        display: flex;
+        padding-top: 2vh;
+        gap: 2vh;
+    }
+    .cont h3{
+        font-size: larger;
+    }
+    .cont h4{
+        font-size: smaller;
+    }
+    .img2a{
+        height: 100%;
+        width: 100%;
+    }
+    .img2a img{
+        height: 80%;
+        width: 100%;
+        object-fit: cover;
+        object-position: 50% 20%;
+    }
+    .img2b{
+        height: 100%;
+        width: 100%;
+        background-color: rgb(91, 29, 115);
+    }
+    .img2b img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: 50% 30%;
+    }
+    .img2{
+        height: 60vh;
+        width: 100%;
+        padding: 4vh;
+    }
+    .img2 img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: 50% 15%;
+    }
+    .sec1{
+        height: 30vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 700;
+        font-size: x-large;
+    }
+    .ele{
+        height: 20vh;
+        width: 100%;
+        border-top: 2px solid black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-transform:capitalize;
+        font-family: poppins;
+        position: relative;
+    }
+    .ele .ele1{
+        width: 40%;
+    }
+    .ele img{
+        object-fit: cover;
+        height: 20vh;
+        width: 20vh;
+        padding: 1vh;
+        border-radius: 50%;
+        object-position: 50% 10%;
+        margin-left: -40%;
+        visibility: hidden;
+    }
+    .ele:hover img{
+        visibility: visible;
+        animation: move 3s linear 0s infinite;
+        opacity: 80%;
+    }
+    .ele:nth-child(2n):hover img{
+        visibility: visible;
+        animation: move 3s linear 0s infinite reverse;
+        opacity: 80%;
+    }
+    @keyframes move {
+        from{
+            transform: translateX(0);
+        }
+        to{
+            margin-left: 30%;
+        }
+    }
+    .ele1 h1{
+        font-size: 3vw;
+    }
+    
+    .ele1 h4{
+        font-weight: 500;
+        margin-top: -2vh;
+    }
+    .ele h2{
+        margin-left: 4vh;
+        font-weight: 300;
+    }
+    .ele:nth-last-child(1){
+        border-bottom: 2px solid black;
+    }
+.foo{
+    height: 15vh;
+    width: 100%;
+    margin-top: 10vh;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    overflow: hidden;
+    text-transform: capitalize;
+    margin-bottom: 4vh;
+}
+.stroke{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    gap: 3vh;
+    animation: stroke 20s linear 0s infinite;
+    
+}
+
+.stroke h2{
+    font-size: 10vh;
+    -webkit-text-stroke:2px black;
+    color: transparent;
+    font-family: poppins;
+    letter-spacing: 2px;
+    
+}
+@keyframes stroke {
+    from{
+        transform: translateX(150%);
+    }
+    to{
+        transform: translateX(-150%);
+    }
+}
+
+@media(max-width:600px) {
+    #nav{
+    height: 5vh;
+    width: 100%;
+}
+#nav h3{
+    margin-left: 4vh;
+    visibility: hidden;
+}
+#nav h1{
+    transform: translateY(6vw);
+    margin-left:1.3vh;
+}
+#nav h4{
+    visibility: visible;
+}
+#nav h2{
+    width: 20%;
+    font-weight: 300;
+    visibility: hidden;
+}
+#nav h1 sup{
+    visibility: hidden;
+}
+.center{
+        height: 50%;
+        padding: 2vw;
+    }
+    .vidcont{
+        bottom: 0;
+        height:50% ;
+        width: 100%;
+    }
+    .circle{
+        height: 4vh;
+        width: 4vh;
+    }
+    .vidcont h1{
+        margin-left: 1vw;
+    }
+    .line{
+        bottom: 14%;
+    }
+    .vidcont1{
+        bottom: 4%;
+        height:8% ;
+    }
+    .vidcont1 h3{
+        margin-left: 1vh;
+        color: white;
+    }
+    .arrow{
+        margin-right: 2vh;
+        color: white;
+    }
+    .models{
+        height: 15vh;
+        gap: 1vh;
+        
+    }
+    .model{
+        height: 15vh;
+        width: 15vh;
+        margin-left: 1vh;
+    }
+     .letter{
+        height: 6vh;
+        margin-top: 1.5vh;
+        gap: 1vw;
+        overflow-x: hidden;
+    }
+    .lettertog{
+        animation:anime 10s linear 0s infinite reverse;
+    }
+    .img1{
+        height: 30vh;
+        padding: 1vh;
+        gap: 1vh;
+    }
+    .img1a img{
+        height: 85%;
+    }
+    .img1b img{
+        height: 65%;
+        object-position:80% 10%;
+    }
+    .cont{
+        padding-top: .3vh;
+        gap: 1vh;
+    }
+    .cont h3{
+        font-size:.9vh;
+    }
+    .cont h4{
+        font-size:.7vh;
+    }
+    .img2a h2{
+        font-size: 1.3vh;
+        line-height: 1.4vh;    }
+    .img2{
+        height:35vh;
+        padding: 1.5vh;
+    }
+    .sec1{
+        height: 10vh;
+    }
+    .ele{
+        height: 5vh;
+    }
+    .ele img{
+        height: 7vh;
+        width: 7vh;
+        padding: 1vh;
+    }
+    @keyframes move {
+        from{
+            transform: translateX(-5%);
+        }
+        to{
+            margin-left: 15%;
+        }
+    }
+    .ele1 h1{
+        font-size: 2vw;
+    }
+    
+    .ele1 h4{
+        margin-top: 0vh;
+    }
+    .ele h2{
+        margin-left: 2vh;
+        font-size: 1.5vh;
+    }
+    .foo{
+    height: 7vh;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+}
+.stroke{
+    gap: 1vh;
+}
+
+.stroke h2{
+    font-size: 6vh;
+}
+}
